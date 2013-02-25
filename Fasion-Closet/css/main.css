@@ -1,0 +1,444 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	background: url(../img/mint_background.jpg) repeat;
+	font-family: century gothic;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*Index.html*/
+
+h1{
+	display: block;
+	font-family: impact;
+	font-size: 90px;
+	margin-bottom: 100px;
+	margin-top: 20px;
+	text-align: center;
+	text-shadow: 0.03em 0.03em 0.03em black;
+}
+
+.span4{
+	background-color: #2E64FE;
+	border-color: #0040FF;
+	border-style: outset;
+	border-width: 4px;
+	height: 400px;
+	opacity: 0.8;
+}
+	.span4:hover{
+		opacity:1.0;
+	}
+	
+div#sign-in{
+	display: block;
+}
+
+	#sign-in h3{
+		font-size: 30px;
+		text-align: center;
+	}
+	#sign-in form{
+		text-align: left;
+	}
+		#sign-in li{
+			list-style: none;
+			margin-bottom: 10px;
+		}
+		#sign-in form input[type="submit"]{
+			background: #81F7BE;
+			box-shadow: 0 1px 0 #000;
+			border-radius: 4px;
+			font-family: century gothic;
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 15px;
+			padding: 10px 30px 10px 30px;
+		}
+			#sign-in form input[type="submit"]:hover{
+				background: #CEF6E3;
+			}
+
+			#sign-in form input[type="submit"]:active{
+				background: #0040FF;
+			}
+	
+div#join{
+	font-size: 28px;
+	display: block;
+	text-align: center;
+}
+	div#join p{
+		font-size: 18px;
+		margin: 10px 20px 10px 20px;
+	}
+	#join form input[type="submit"]{
+		background: #81F7BE;
+		box-shadow: 0 1px 0 #000;
+		border-radius: 4px;
+		font-family: century gothic;
+		font-size: 27px;
+		font-weight: bold;
+		margin-top: 40px;
+		padding: 15px;
+	}
+		#join form input[type="submit"]:hover{
+			background: #CEF6E3;
+		}
+
+		#join form input[type="submit"]:active{
+			background: #0040FF;
+		}
+
+
+/*HomePage.html*/
+
+#home{
+	margin-bottom: 40px;
+}
+
+#closet{
+	background: #6E6E6E;
+	height: 400px;
+	opacity: 0.8;
+}
+	h3{
+		font-size: 30px;
+		margin-top: 10px;
+		text-align: center;
+	}
+.span3{
+	background: #58FAAC;
+	height: 350px;
+	list-style: none;
+}
+	a.dropdown-toggle{
+		font-size: 25px;
+		margin: 20px 0 10px 30px;
+		padding-top: 20px;
+		text-decoration: none;
+	}
+	.caret{
+		border-top: 4px solid #000;
+		border-right:4px solid transparent;
+		border-left:4px solid transparent;
+		display: inline-block;
+		height: 0;
+		margin: 7px 0 0 5px;
+		vertical-align: top;
+		width: 0;
+	}
+	.dropdown-menu{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		display: none;
+		min-width: 160px;
+		list-style: none;
+		background-color: #fff;
+		border: 1px solid #000;
+	}
+	li{
+		display: list-item;
+		list-style: none;
+	}
+	img.tops{
+		height: 300px;
+		margin-left: 10px;
+		width: 250px;
+	}
+	img.bottoms{
+		height: 300px;
+		margin-left: 10px;
+		width: 250px;
+	}
+	img.shoes{
+		height: 300px;
+		margin-left: 10px;
+		width: 250px;
+	}
+	img.accessories{
+		height: 300px;
+		margin-left: 10px;
+		width: 250px;
+	}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

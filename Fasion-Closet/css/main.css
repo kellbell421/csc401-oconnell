@@ -196,12 +196,26 @@ div#join{
 		margin-top: 10px;
 		text-align: center;
 	}
+
+div.row{
+
+}
+
 .span3{
 	background: #58FAAC;
 	height: 350px;
 	list-style: none;
 }
-	a.dropdown-toggle{
+.span2{
+	background: #58FAAC;
+	height: 350px;
+	list-style: none;
+}
+
+img{
+	
+}
+/*	a.dropdown-toggle{
 		font-size: 25px;
 		margin: 20px 0 10px 30px;
 		padding-top: 20px;
@@ -231,26 +245,64 @@ div#join{
 	li{
 		display: list-item;
 		list-style: none;
+	}*/
+	
+	#button{
+		display: block;
+		width: 190px;
 	}
+	
+	#button a{
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	#button ul{
+		list-style-type: none;
+	}
+	
+	#button li.top{
+		font-size: 25px;
+		margin-left: -25px;
+	}
+	
+	#button li.top.a{
+		font-size: 25px;
+		margin-left: -37px;
+	}
+	
+	#button ul li.item{
+		color: #fff;
+		display: none;
+		text-align: center;
+	}
+	
+	#button ul:hover .item{
+		display: block;
+		border: 1px solid white;
+		background-color: #1C1C1C;
+	}
+	
 	img.tops{
-		height: 300px;
+		height: 270px;
 		margin-left: 10px;
 		width: 250px;
 	}
 	img.bottoms{
-		height: 300px;
+		height: 270px;
 		margin-left: 10px;
 		width: 250px;
 	}
 	img.shoes{
-		height: 300px;
+		height: 270px;
 		margin-left: 10px;
 		width: 250px;
 	}
 	img.accessories{
-		height: 300px;
+		height: 270px;
 		margin-left: 10px;
-		width: 250px;
+		width: 150px;
 	}
 
 /* ==========================================================================
